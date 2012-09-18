@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Checkbox (un)Checker // webb.tj</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css" type="text/css"></link>
+</head>
+<body>
+    <h1>Checkbox (un)Checker</h1>
+    <h3>What is it?</h3>
+    <p>Ever been faced with a page full of checkboxes that you need to check/uncheck? Here's a little solution, install this bookmerklet, then, when faced with a pile of checkboxes, click the bookmarklet and type one of the following commands.</p>
+    <ul>
+        <li><strong>T</strong> - type "t" to toggle all checkboxes on the page (all boxes that are checked will become unchecked, all boxes that are unchecked will become checked).</li>
+        <li><strong>C</strong> - type "c" to check all checkboxes on the page (all boxes become checked).</li>
+        <li><strong>U</strong> - type "u" to uncheck all checkboxes on the page (all boxes become unchecked).</li>
+    </ul>
+    <p>Commands are case insensitive. Aliases exist: <strong>Y</strong>(es) and <strong>A</strong>(ll) are aliases for <strong>C</strong>(heck); <strong>N</strong>(o) or <strong>N</strong>(one) is an alias for <strong>U</strong>(ncheck).</p>
+    <h3>How does it work?</h3>
+    <p>Add the Checkbox (un)Checker Bookmarklet Button below to your browser's bookmark bar (drag and drop). Then, any time you are faced with multiple checkboxes, click the bookmarklet and type one of the above commands.</p>
+    <h3>Get it!</h3>
+    <p>Drag the button below to your browser's bookmark bar.<p>
+        <!-- When making changes to check.js please remember to reflect those changes here -->
+        <p><a class="lorem" href="javascript:(function%20docheck()%7Bfunction%20ku(e)%7Bis%3Ddocument.getElementsByTagName('input')%3Bfor(i%3D0%3Bi%3Cis.length%3Bi%2B%2B)%7Bif(is%5Bi%5D.attributes.getNamedItem('type').value%3D%3D'checkbox')%7Bswitch(e.keyCode)%7Bcase%2084%3Ais%5Bi%5D.checked%3D!is%5Bi%5D.checked%3Bwindow.removeEventListener('keyup'%2Cku%2Cfalse)%3Bbreak%3Bcase%2067%3Acase%2065%3Acase%2089%3Ais%5Bi%5D.checked%3Dtrue%3Bwindow.removeEventListener('keyup'%2Cku%2Cfalse)%3Bbreak%3Bcase%2085%3Acase%2078%3Ais%5Bi%5D.checked%3Dfalse%3Bwindow.removeEventListener('keyup'%2Cku%2Cfalse)%3Bbreak%3B%7D%7D%7D%7D%0Awindow.addEventListener('keyup'%2Cku%2Cfalse)%3B%7D)()%3B">Checkbox (un)Checker</a></p>
+    </body>
+    </html>
